@@ -3,3 +3,9 @@
 node_modules/
 .env
 .env.local
+
+# Local-only working files (per project decision: tracking stays local)
+CLAUDE.md
+PROGRESS_TRACKER.md
+docs/decisions/
+.sloth/
