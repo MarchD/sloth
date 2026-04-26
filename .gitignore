@@ -3,6 +3,8 @@
 node_modules/
 .env
 .env.local
+.idea/
+.vscode/
 
 # Local-only working files (per project decision: tracking stays local)
 CLAUDE.md

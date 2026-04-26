@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="sloth.png" alt="sloth" width="120" />
+</p>
+
 # sloth
 
 > The lazy starter brain for Claude Code projects.
@@ -24,10 +28,18 @@ Scan-then-interview. Sloth reads your repo first, shows you what it found, asks 
 
 🦥 **Walking skeleton (v0.1.0).** Plugin manifest + two slash commands + synthesizer skill stub. Interview/synthesis logic runs inline for now; the synthesizer will harden as the workflow gets validated by hand on real projects.
 
-## Install (local dev)
+## Install
 
 ```
-/plugin install /path/to/sloth
+/plugin marketplace add MarchD/sloth
+/plugin install sloth@sloth-marketplace
+```
+
+For local development (no GitHub round-trip):
+
+```
+/plugin marketplace add /path/to/sloth
+/plugin install sloth@sloth-marketplace
 ```
 
 ## Structure
@@ -35,13 +47,18 @@ Scan-then-interview. Sloth reads your repo first, shows you what it found, asks 
 ```
 sloth/
 ├── .claude-plugin/
-│   └── plugin.json
-├── commands/
+│   ├── plugin.json
+│   └── marketplace.json
+├── commands/                 # ships to plugin users
 │   ├── start-new.md
 │   └── start-existing.md
-├── skills/
+├── skills/                   # ships to plugin users
 │   └── synthesizer/
 │       └── SKILL.md
-├── templates/             # stack-tuned templates (filled in iteratively)
+├── .claude/                  # sloth's own dev workflow (commands + skills)
+│   ├── commands/
+│   └── skills/
+├── templates/                # stack-tuned templates (filled in iteratively)
+├── sloth.png
 └── README.md
 ```
