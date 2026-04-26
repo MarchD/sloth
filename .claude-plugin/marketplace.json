@@ -1,0 +1,14 @@
+{
+  "name": "sloth-marketplace",
+  "owner": {
+    "name": "Maryna Dubchak"
+  },
+  "plugins": [
+    {
+      "name": "sloth",
+      "source": "./",
+      "description": "Lazy starter brain for Claude Code projects. Interview-first scaffolding for new ideas; scan-then-interview for existing repos. Generates CLAUDE.md, ADRs, slash commands, and memory seed.",
+      "version": "0.1.0"
+    }
+  ]
+}
