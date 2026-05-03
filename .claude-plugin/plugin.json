@@ -1,7 +1,7 @@
 {
   "name": "sloth",
   "version": "0.1.0",
-  "description": "Lazy starter brain for Claude Code projects. Interview-first scaffolding for new ideas; scan-then-interview for existing repos. Generates CLAUDE.md, ADRs, slash commands, and memory seed so you can skip the boring setup and get to the work.",
+  "description": "Lazy starter brain for agent-assisted software projects. Interview-first scaffolding for new ideas; scan-then-interview for existing repos. Generates AGENTS.md, workflow docs, ADRs, repo-tuned commands, and memory seed so you can skip the boring setup and get to the work.",
   "author": {
     "name": "Maryna Dubchak"
   }

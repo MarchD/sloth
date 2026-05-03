@@ -7,7 +7,7 @@
     {
       "name": "sloth",
       "source": "./",
-      "description": "Lazy starter brain for Claude Code projects. Interview-first scaffolding for new ideas; scan-then-interview for existing repos. Generates CLAUDE.md, ADRs, slash commands, and memory seed.",
+      "description": "Lazy starter brain for agent-assisted software projects. Interview-first scaffolding for new ideas; scan-then-interview for existing repos. Generates AGENTS.md, workflow docs, ADRs, repo-tuned commands, and memory seed.",
       "version": "0.1.0"
     }
   ]

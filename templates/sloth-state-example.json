@@ -1,0 +1,87 @@
+{
+  "scan_summary": {
+    "schema_version": "1",
+    "generated_at": "2026-05-03",
+    "repo_root": "/absolute/path/to/project",
+    "detected_stack": {
+      "languages": ["TypeScript"],
+      "frameworks": ["React", "Express"],
+      "build_files": ["package.json"]
+    },
+    "structure": {
+      "top_level_dirs": ["src", "docs", "tests"],
+      "docs_files": ["docs/WORKFLOW.md", "docs/PRINCIPLES.md"],
+      "agent_files": ["AGENTS.md", ".agents/commands/implement.md"]
+    },
+    "tooling": {
+      "test_commands": ["npm test"],
+      "build_commands": ["npm run build"],
+      "ci_files": [".github/workflows/ci.yml"]
+    },
+    "activity": {
+      "recent_commits": ["abc123 feat: add billing settings"],
+      "changed_files_hint": ["src/billing.ts", "AGENTS.md"]
+    },
+    "workflow_signals": {
+      "canonical_brain_file": "AGENTS.md",
+      "has_agents_commands": true,
+      "has_claude_adapter": false,
+      "likely_pain_points": ["implementation handoff", "unclear test entrypoint"]
+    }
+  },
+  "intake": {
+    "schema_version": "1",
+    "updated_at": "2026-05-03",
+    "mode": "brownfield",
+    "workflow": {
+      "project_type": "shipping",
+      "want_plan": true,
+      "want_guide": false,
+      "issue_tracker": "github",
+      "next_milestone": "ship billing v1",
+      "pain_point": "people cannot tell which workflow to follow"
+    },
+    "principles": {
+      "testing_stance": "tests required for touched code",
+      "security_lines": ["no secrets in repo"],
+      "never_rules": ["no hidden magic scripts"]
+    },
+    "protected_sections": [
+      {
+        "file": "AGENTS.md",
+        "heading": "Team Notes"
+      }
+    ]
+  },
+  "brain_state": {
+    "schema_version": "1",
+    "last_refreshed_at": "2026-05-03",
+    "canonical_brain_file": "AGENTS.md",
+    "adapter_files": ["CLAUDE.md"],
+    "managed_files": [
+      "AGENTS.md",
+      "docs/WORKFLOW.md",
+      ".agents/commands/plan.md",
+      ".agents/commands/implement.md"
+    ],
+    "managed_sections": [
+      {
+        "file": "AGENTS.md",
+        "heading": "Stack"
+      },
+      {
+        "file": "AGENTS.md",
+        "heading": "Commands"
+      },
+      {
+        "file": "AGENTS.md",
+        "heading": "OPEN_QUESTIONS"
+      }
+    ],
+    "scan_fingerprint": {
+      "build_files": ["package.json"],
+      "ci_files": [".github/workflows/ci.yml"],
+      "agent_files": ["AGENTS.md", ".agents/commands/implement.md"]
+    }
+  }
+}
