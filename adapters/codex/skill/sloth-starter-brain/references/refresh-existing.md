@@ -1,5 +1,3 @@
-Refresh a project that Sloth already touched by reading the existing brain, running a compact rescan, and proposing minimal diffs.
-
 ## Goal
 
 Update an existing project brain safely and cheaply. Reuse prior Sloth state, read the current repo, detect what actually changed, and propose targeted diffs for only the stale sections.
@@ -69,10 +67,3 @@ Optional refresh targets:
 ### 6. Write only accepted diffs
 
 Update only accepted sections or files. Never rewrite the whole project brain if a section patch is enough.
-
-## Codex adapter rules
-
-- Patch sections before rewriting whole files.
-- Reuse `.sloth/scan-summary.json`, `.sloth/intake.json`, and `.sloth/brain-state.json` when present.
-- Treat `AGENTS.md` as canonical when present; `CLAUDE.md` is a legacy adapter.
-- Preserve handwritten sections unless the user explicitly wants replacement.

@@ -2,7 +2,7 @@
 
 ## Status
 
-Partially live. Codex command wrappers now exist for the core flows, and ADR-002 defines wrappers as the supported first adapter surface. There is still no Codex-specific packaging manifest.
+Live at the skill-install layer. Sloth now ships as a self-contained Codex skill package. There is still no separate Codex packaging manifest beyond the skill itself.
 
 ## Goal
 
@@ -25,19 +25,29 @@ The first real Codex adapter should document:
 
 ## Current invocation surface
 
-Codex-facing wrappers live at:
+Primary Codex surface:
+
+- `adapters/codex/skill/sloth-starter-brain/`
+
+Compatibility wrappers still exist at:
 
 - `.Codex/commands/start-new.md`
 - `.Codex/commands/start-existing.md`
 - `.Codex/commands/refresh-existing.md`
 
-These wrappers delegate to the neutral contracts in `commands/` and keep the canonical project outputs unchanged:
+The skill and wrappers keep the canonical project outputs unchanged:
 
 - `AGENTS.md`
 - `.agents/commands/`
 - `.sloth/*.json`
 
 This direction is the current accepted approach in [docs/decisions/ADR-002-codex-adapter-surface.md](/Users/marynadubchak/Documents/projects-to-launch/sloth/docs/decisions/ADR-002-codex-adapter-surface.md:1).
+
+## Install
+
+Install instructions are in [adapters/codex/INSTALL.md](/Users/marynadubchak/Documents/projects-to-launch/sloth/adapters/codex/INSTALL.md:1).
+The current install helper is `adapters/codex/install.sh`.
+The same file also contains a ready-to-copy remote install prompt for Codex.
 
 ## Open questions
 
@@ -50,10 +60,12 @@ This direction is the current accepted approach in [docs/decisions/ADR-002-codex
 For now, updating the Codex adapter means updating:
 
 - the neutral contracts in `commands/`
-- the Codex wrappers in `.Codex/commands/`
+- the Codex skill package in `adapters/codex/skill/`
+- the compatibility wrappers in `.Codex/commands/`
 - the Codex adapter docs in `adapters/codex/`
+- the install helper in `adapters/codex/install.sh`
 
-There is no separate Codex package version yet.
+There is no separate Codex package version yet, but the update path no longer depends on Claude-specific packaging.
 
 ## Non-goals
 

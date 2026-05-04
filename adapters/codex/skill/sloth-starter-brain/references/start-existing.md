@@ -1,5 +1,3 @@
-Scan an existing repo with a compact local-first pass, ask only unresolved questions, and generate the smallest useful neutral starter brain.
-
 ## Goal
 
 Take a project that already has code, conventions, and history, and retrofit an understand -> plan -> implement -> guide -> sync -> merge workflow onto it without burning tokens on repeated full-repo synthesis.
@@ -38,10 +36,10 @@ Show the summary and ask the user to correct only what matters.
 
 ### 3. Forward pass
 
-- What's painful right now in your workflow?
-- What's the next milestone you care about?
-- Where do you most often lose context today?
-- Which workflow rituals matter to you?
+- What's painful right now in your workflow
+- What's the next milestone you care about
+- Where do you most often lose context today
+- Which workflow rituals matter to you
 
 Only ask follow-up questions that the compact scan could not answer.
 
@@ -70,10 +68,3 @@ Generate these only if they add clear value:
 - `docs/PRINCIPLES.md`
 - assistant-specific adapters
 - `MEMORY.md`
-
-## Codex adapter rules
-
-- Treat `AGENTS.md` as canonical output.
-- Persist scan state in `.sloth/*.json` for refreshes.
-- Prefer deterministic shell scans over token-heavy chat.
-- Generate Codex-specific wrappers only when the user asks for them.

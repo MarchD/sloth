@@ -88,7 +88,7 @@ Sloth now has three layers:
 The new adapter directory lives at [adapters/README.md](/Users/marynadubchak/Documents/projects-to-launch/sloth/adapters/README.md:1).
 The shared adapter checklist lives at [docs/ADAPTER_CONTRACT.md](/Users/marynadubchak/Documents/projects-to-launch/sloth/docs/ADAPTER_CONTRACT.md:1).
 
-Current Codex-facing wrappers live in `.Codex/commands/` and delegate to the neutral command contracts.
+Current Codex-facing wrappers live in `.Codex/commands/` and are installable into another project via [adapters/codex/INSTALL.md](/Users/marynadubchak/Documents/projects-to-launch/sloth/adapters/codex/INSTALL.md:1).
 The current Codex decision is documented in [docs/decisions/ADR-002-codex-adapter-surface.md](/Users/marynadubchak/Documents/projects-to-launch/sloth/docs/decisions/ADR-002-codex-adapter-surface.md:1).
 
 The canonical split is documented in [docs/ARCHITECTURE.md](/Users/marynadubchak/Documents/projects-to-launch/sloth/docs/ARCHITECTURE.md:1).

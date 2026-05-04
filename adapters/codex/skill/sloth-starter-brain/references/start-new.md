@@ -1,5 +1,3 @@
-Interview the user about a new product idea and generate the minimal neutral starter brain.
-
 ## Goal
 
 Walk the user through a short, structured interview about their product idea. Then synthesize the answers into a starter brain that gives the project a working `AGENTS.md`, `docs/WORKFLOW.md`, a vision doc, and repo-tuned commands.
@@ -9,11 +7,11 @@ Walk the user through a short, structured interview about their product idea. Th
 Run these passes in order, one question at a time. Do not generate anything until the user confirms the proposed structure.
 
 ### 1. Vision pass
-- One-line pitch: what is this in one sentence?
-- Who is the first user?
-- What is the core loop in one sentence?
-- What does success look like in 30 days?
-- What are you explicitly not building?
+- One-line pitch
+- First user
+- Core loop
+- Success in 30 days
+- Explicit non-goals
 
 ### 2. Tech pass
 - Preferred language or stack and experience level
@@ -21,10 +19,10 @@ Run these passes in order, one question at a time. Do not generate anything unti
 - Hard constraints
 
 ### 3. Workflow pass
-- Solo or team?
-- Learning project or shipping project?
-- Do you want the `/guide` ritual, or skip it?
-- Do you want a lightweight `/plan` step before `/implement`, or should implementation start directly from issues?
+- Solo or team
+- Learning project or shipping project
+- `/guide` ritual or skip
+- Lightweight `/plan` before `/implement`, or direct implementation from issues
 
 ### 4. Principles pass
 - Testing stance
@@ -33,7 +31,7 @@ Run these passes in order, one question at a time. Do not generate anything unti
 
 ### 5. Wrap-up
 
-List unresolved ambiguities. Ask whether to resolve them now or ship them as known unknowns in `AGENTS.md`.
+List unresolved ambiguities. Ask whether to resolve them now or carry them as known unknowns in `AGENTS.md`.
 
 ## Synthesis
 
@@ -51,10 +49,3 @@ Offer these as optional expansions:
 - `docs/PROGRESS_TRACKER.md`
 - assistant-specific adapters only if the user explicitly asks
 - `MEMORY.md`
-
-## Codex adapter rules
-
-- Treat `AGENTS.md` as canonical output.
-- Prefer `.agents/commands/` for generated workflow commands.
-- Generate assistant-specific adapter files only if the user explicitly asks.
-- Keep the first pass small; default to the minimal artifact set.

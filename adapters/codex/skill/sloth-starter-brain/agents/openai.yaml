@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sloth Starter Brain"
+  short_description: "Scaffold or refresh project brains"
+  default_prompt: "Use $sloth-starter-brain to scaffold or refresh an AGENTS.md-based project brain for this repo."

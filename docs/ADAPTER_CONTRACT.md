@@ -78,4 +78,4 @@ Current status:
 - invocation surface: yes, via `.Codex/commands/`
 - mapped command exposure: yes for the three core flows
 - canonical file relationship: documented
-- independent update story: not yet
+- independent update story: yes, via self-contained command files and `adapters/codex/install.sh`
